@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Form Input Wave</title>
+  </head>
+  <body>
+    <form id="form" class="form">
+      <h1 class="form-title">Please Login</h1>
+      <label for="email" class="form-field">
+        <input
+          required
+          placeholder="Your email..."
+          type="email"
+          id="email"
+          class="form-field-input"
+        />
+
+        <h2 class="form-field-label">
+          <span style="transition-delay: 0ms">E</span>
+          <span style="transition-delay: 50ms">m</span>
+          <span style="transition-delay: 100ms">a</span>
+          <span style="transition-delay: 150ms">i</span>
+          <span style="transition-delay: 200ms">l</span>
+        </h2>
+      </label>
+
+      <label for="password" class="form-field">
+        <input
+          required
+          placeholder="Your password..."
+          type="password"
+          id="password"
+          class="form-field-input"
+        />
+
+        <h2 class="form-field-label">
+          <span style="transition-delay: 0ms">P</span>
+          <span style="transition-delay: 50ms">a</span>
+          <span style="transition-delay: 100ms">s</span>
+          <span style="transition-delay: 150ms">s</span>
+          <span style="transition-delay: 200ms">w</span>
+          <span style="transition-delay: 250ms">o</span>
+          <span style="transition-delay: 300ms">r</span>
+          <span style="transition-delay: 350ms">d</span>
+        </h2>
+      </label>
+
+      <button type="submit" class="form-btn">Login</button>
+
+      <div class="form-footer">
+        <p class="form-text">Don't have an account?</p>
+        <a href="#" rel="noopener noreferrer" class="form-link"> Register </a>
+      </div>
+    </form>
+
+    <script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", (e) => e.preventDefault());
+    </script>
+  </body>
+</html>
